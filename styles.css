@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+.ssbody {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, #000 60%, #050917);
+  overflow: hidden;
+}
+
+ul {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+}
+
+.star#sun {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin: -5vh 0 0 -5vh;
+  background: radial-gradient(circle, #fdb813, #ff6600);
+  border-radius: 50%;
+  box-shadow: 0 0 30px #ff9933;
+  width: 10vh;
+  height: 10vh;
+  list-style-type: none;
+}
+
+.planet {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.planet::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Planets */
+#mercury {
+  background: #37322c;
+  width: 2vh;
+  height: 2vh;
+  animation: merGFG 4s infinite linear;
+}
+
+#venus {
+  background: #f5d60c;
+  width: 3vh;
+  height: 3vh;
+  animation: venGFG 6s infinite linear;
+}
+
+#earth {
+  background: #47e907;
+  width: 4vh;
+  height: 4vh;
+  animation: earGFG 8s infinite linear;
+}
+
+#mars {
+  background: #dd3610;
+  width: 3.5vh;
+  height: 3.5vh;
+  animation: marGFG 10s infinite linear;
+}
+
+#jupiter {
+  background: #6b6926;
+  width: 7vh;
+  height: 7vh;
+  animation: jupGFG 14s infinite linear;
+}
+
+#saturn {
+  background: #63bc86;
+  width: 6vh;
+  height: 6vh;
+  animation: satGFG 18s infinite linear;
+}
+
+#uranus {
+  background: #0e3cd3;
+  width: 5vh;
+  height: 5vh;
+  animation: uraGFG 22s infinite linear;
+}
+
+#neptune {
+  background: #21c7c2;
+  width: 5vh;
+  height: 5vh;
+  animation: nepGFG 26s infinite linear;
+}
+
+#pluto {
+  background: #eadccb;
+  width: 2.5vh;
+  height: 2.5vh;
+  animation: pluGFG 30s infinite linear;
+}
+
+/* Animation */
+@keyframes merGFG {
+  0% {
+    transform: rotate(0deg) translateX(9vh) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(9vh) rotate(-360deg);
+  }
+}
+
+@keyframes venGFG {
+  0% {
+    transform: rotate(0deg) translateX(13vh) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(13vh) rotate(-360deg);
+  }
+}
+
+@keyframes earGFG {
+  0% {
+    transform: rotate(0deg) translateX(19vh) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(19vh) rotate(-360deg);
+  }
+}
+
+@keyframes marGFG {
+  0% {
+    transform: rotate(0deg) translateX(27vh) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(27vh) rotate(-360deg);
+  }
+}
+
+@keyframes jupGFG {
+  0% {
+    transform: rotate(0deg) translateX(37vh) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(37vh) rotate(-360deg);
+  }
+}
+
+@keyframes satGFG {
+  0% {
+    transform: rotate(0deg) translateX(49vh) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(49vh) rotate(-360deg);
+  }
+}
+
+@keyframes uraGFG {
+  0% {
+    transform: rotate(0deg) translateX(63vh) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(63vh) rotate(-360deg);
+  }
+}
+
+@keyframes nepGFG {
+  0% {
+    transform: rotate(0deg) translateX(79vh) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(79vh) rotate(-360deg);
+  }
+}
+
+@keyframes pluGFG {
+  0% {
+    transform: rotate(0deg) translateX(97vh) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(97vh) rotate(-360deg);
+  }
+}
